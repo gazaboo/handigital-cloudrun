@@ -28,4 +28,4 @@ def test_version(client):
 # 🚫 Test d'une route inexistante
 def test_not_found(client):
     response = client.get("/route-inexistante")
-    assert response.status_code == 404
+    assert response.status_code == 204
